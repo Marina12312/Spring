@@ -9,17 +9,17 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-    @Bean
+    @Bean(name = "Car")
    public Car getCarBean(){
-        return new Car("CAR");
+        return new Car("Car");
     }
-    @Bean
+    @Bean(name = "Pickup")
     public Pickup getPickupBean() {
         return new Pickup("Pickup");
     }
-    @Bean
+    @Bean(name = "Bus")
     public Bus getBusBean() {
-        return new Bus("BUS");
+        return new Bus("Bus");
     }
     @Bean(name = "driverCar")
     public Driver getDriverCarBean() {
